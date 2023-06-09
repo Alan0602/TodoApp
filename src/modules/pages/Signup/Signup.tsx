@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { MyTextInput } from "../../components/Formik/FormikComponents";
 import { signup } from "./signupApi";
 import * as Yup from "yup";
+import styles from "./signup.module.css"
 
 type Props = {};
 
@@ -35,8 +36,11 @@ function Signup(props: Props) {
     
   };
   return (
-    <div>
-      <h1>Signup</h1>
+    <div className={styles.container}>
+      <div className={styles.head}>
+       <h1>SignUp</h1>
+      </div>
+      <div className={styles.input}>
       <Formik
         initialValues={{
           userName: "",
@@ -47,29 +51,33 @@ function Signup(props: Props) {
         onSubmit={values =>{handleSubmit(values)}}
       >
         <Form>
+        <br />
           <MyTextInput
             label="Username"
             name="userName"
             type="text"
             placeholder="username"
           />
-
+  <br />
           <MyTextInput
             label="Password"
             name="password"
             type="password"
             placeholder="password"
           />
-
+<br />
           <MyTextInput
             label="Confirm Password"
             name="password1"
             type="password"
             placeholder="Confirm password"
           />
+          <br />
           <button type="submit">SignIn</button>
+          <br />
         </Form>
       </Formik>
+      </div>
     </div>
   );
 }

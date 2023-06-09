@@ -37,25 +37,23 @@ const Login = (props: Props) => {
           >
          <Form >
           <br />
-          <div className={styles.text}>
            <MyTextInput
              label="Username :  "
              name="userName"
              type="text"
              placeholder="username"
              />
-            </div>
           <br />
-          <div className={styles.text}>
            <MyTextInput
              label="Password :  "
              name="password"
              type="password"
              placeholder="password"
              />
-            </div>
              <br />
            <button type="submit">Login</button>
+           <br />
+           <p>Don't have account? <a href="/signup">Signup Now</a></p>
          </Form>
        </Formik>
       </div>
