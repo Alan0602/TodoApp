@@ -12,7 +12,9 @@ privateGateway.interceptors.request.use(
         if (localStorage.getItem("accessToken") !== null) {
             config.headers["Authorization"] = `Bearer ${localStorage.getItem(
                 "accessToken"
-            )}`;
+            )}`,
+            config.headers["Content-Type"]= "application/x-www-form-urlencoded"
+        
         }
 
         return config;

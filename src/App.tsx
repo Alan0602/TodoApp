@@ -3,8 +3,13 @@ import './App.css'
 import NotFound from './modules/components/NotFound/NotFound';
 import Login from './modules/pages/Login/Login';
 import Signup from './modules/pages/Signup/Signup';
+import Todo from './modules/pages/Todo/Todo';
 
 const router = createBrowserRouter([
+    {
+        path: "/",
+        element: <Todo />
+    },
     {
         path: "*",
         element: <NotFound />
@@ -17,10 +22,6 @@ const router = createBrowserRouter([
         path: "/Login",
         element: <Login />
     },
-	// {
-	// 	path: "/",
-	// 	element: <Todo />
-	// }
     
 ]);
 

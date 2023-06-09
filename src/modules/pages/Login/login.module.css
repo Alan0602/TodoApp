@@ -1,0 +1,40 @@
+body{
+  background-image: url("https://e0.pxfuel.com/wallpapers/443/289/desktop-wallpaper-coastline-mountain-pass-road-twilight-sunset-scenery-nature-neon-purple-mountain.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 40%;
+}
+.container{
+  height: 400px;
+  width: 400px;
+  border:  rgb(253, 250, 250) 1px solid;
+  border-radius: 15% 15% 15% 15%;
+  background: linear-gradient(to right,blue,purple);
+  box-shadow: 10px 10px 50px grey;
+}
+.head{
+  color:aliceblue;
+}
+.input{
+  background: linear-gradient(to right,rgb(244, 248, 249),rgb(200, 247, 255));
+  height: 275.3px;
+  border-radius: 0 0 15% 15% ;
+  border:  rgb(247, 244, 244) 1px solid;  
+  box-shadow:inset ;
+}
+.text{
+  font-size: medium;
+  font-weight: bold;
+  margin:1remm;
+}
+button{
+  width:50%;
+  color: rgb(107, 110, 112);
+  background: linear-gradient(to right,rgb(163, 247, 161),rgb(167, 242, 242));
+  font-weight: bold;
+  box-shadow: 10px 10px 50px rgb(180, 178, 178);
+}
+button:hover{
+  transform: scale(1.1) rotate(-0.5deg);
+}
+
+
