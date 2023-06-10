@@ -1,29 +1,28 @@
 .container{
-    height: 502px;
-    width: 400px;
-    border:  rgb(253, 250, 250) 1px solid;
-    border-radius: 15% 15% 15% 15%;
-    background: linear-gradient(to right,rgb(113, 113, 248),rgb(252, 134, 252));
-    box-shadow: 10px 10px 50px rgb(172, 170, 170);
-  }
-  .head{
-    color:aliceblue;
-  }
-  .input{
-    background: linear-gradient(to right,rgb(244, 248, 249),rgb(247, 249, 249));
-    height:377.3px;
-    border-radius: 0 0 15% 15% ;
-    border:  rgb(247, 244, 244) 1px solid;  
-    box-shadow:inset ;
-  }
-  .btn{
-    width:50%;
-    color: rgb(107, 110, 112);
-    background: linear-gradient(to right,rgb(163, 247, 161),rgb(167, 242, 242));
-    font-weight: bold;
-    box-shadow: 10px 10px 50px rgb(180, 178, 178);
-  }
-  .btn:hover{
-    transform: scale(1.1) rotate(-0.5deg);
-  }
-  
+  height: 502px;
+  width: 400px;
+  border:  rgb(253, 250, 250) 1px solid;
+  border-radius: 15% 15% 15% 15%;
+  background: linear-gradient(to right,rgb(113, 113, 248),rgb(252, 134, 252));
+  box-shadow: 10px 10px 50px rgb(172, 170, 170);
+}
+.head{
+  color:aliceblue;
+}
+.input{
+  background: linear-gradient(to right,rgb(244, 248, 249),rgb(247, 249, 249));
+  height:377.3px;
+  border-radius: 0 0 15% 15% ;
+  border:  rgb(247, 244, 244) 1px solid;  
+  box-shadow:inset ;
+}
+.btn{
+  width:50%;
+  color: rgb(107, 110, 112);
+  font-weight: bold;
+  background: linear-gradient(to right,rgb(161, 168, 247),rgb(242, 167, 231));
+  border-radius: 25px;
+}
+.btn:hover{
+  transform: scale(1.1) rotate(-0.5deg);
+}

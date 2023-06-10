@@ -10,25 +10,24 @@ body{
   border:  rgb(253, 250, 250) 1px solid;
   border-radius: 15% 15% 15% 15%;
   background: linear-gradient(to right,rgb(102, 102, 250),rgb(239, 105, 239));
-  box-shadow: 10px 10px 50px rgb(169, 168, 168);
+  box-shadow: 5px 5px 40px rgb(209, 208, 208);
 }
 .head{
   color:aliceblue;
 }
 .input{
-  background: linear-gradient(to right,rgb(244, 248, 249),rgb(246, 247, 248));
+  background: white;
   height: 317.3px;
-  border-radius: 0 0 15% 15% ;
+  border-radius: 0 0 35px 35px;
   border:  rgb(247, 244, 244) 1px solid;  
-  box-shadow:inset ;
 }
 
 .button{
   width:50%;
   color: rgb(107, 110, 112);
-  background: linear-gradient(to right,rgb(163, 247, 161),rgb(167, 242, 242));
+  background: linear-gradient(to right,rgb(161, 168, 247),rgb(242, 167, 231));
   font-weight: bold;
-  box-shadow: 10px 10px 50px rgb(180, 178, 178);
+  border-radius: 25px;
 }
 .button:hover{
   transform: scale(1.1) rotate(-0.5deg);

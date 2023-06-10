@@ -5,9 +5,11 @@
     background: linear-gradient(to right,rgba(241, 241, 241, 0.027),rgba(249, 247, 249, 0));
 }
 .head{
-    color:aliceblue;
-    display: flex;
-    justify-content: center;
+  color:aliceblue;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 200px;
   }
   .input{
     background: linear-gradient(to right,rgba(244, 248, 249, 0),rgba(246, 247, 248, 0));
@@ -62,7 +64,7 @@
   }
   .btn{
     color: rgb(107, 110, 112);
-    background: linear-gradient(to right,rgb(163, 247, 161),rgb(167, 242, 242));
+    background: linear-gradient(to right,rgb(161, 170, 247),rgb(242, 167, 234));
     font-weight: bold;
     box-shadow: 10px 10px 50px rgb(180, 178, 178);
   }
