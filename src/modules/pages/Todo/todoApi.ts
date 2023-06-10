@@ -1,4 +1,4 @@
-import axios, { AxiosError } from "axios";
+import  { AxiosError } from "axios";
 import { privateGateway } from "../../../services/apiGateway";
 import { routes } from "../../../services/routes";
 

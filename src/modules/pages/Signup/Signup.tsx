@@ -7,9 +7,9 @@ import styles from "./signup.module.css"
 import { ToastContainer } from "react-toastify";
 import { loading, notify } from "../../components/Common/Tostify";
 
-type Props = {};
 
-function Signup(props: Props) {
+
+function Signup() {
   const navigate = useNavigate();
 
   const signupValidationSchema = Yup.object({

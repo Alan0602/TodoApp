@@ -7,9 +7,8 @@ import { useNavigate } from 'react-router-dom';
 import { ToastContainer } from 'react-toastify';
 import { loading } from '../../components/Common/Tostify';
 
-type Props = {}
 
-const Login = (props: Props) => {
+const Login = () => {
   const navigate = useNavigate()
 
   

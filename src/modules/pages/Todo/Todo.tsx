@@ -15,9 +15,9 @@ interface todo{
   host: number
 }
 
-type Props = {}
 
-const Todo = (props: Props) => {
+
+const Todo = () => {
   const [data, setData] = useState<todo[]>([])
   useEffect(() => {
     todoGet(setData)
