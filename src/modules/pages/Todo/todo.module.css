@@ -77,4 +77,11 @@
   .completed {
     text-decoration: line-through;
   }
-  
+  .imp{
+    width: 599px;
+    border-radius: 25px;
+    text-align: center;
+  }
+  .gap{
+    padding: 1.5rem;
+  }
