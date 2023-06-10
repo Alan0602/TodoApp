@@ -19,9 +19,9 @@
   .btn{
     width:50%;
     color: rgb(107, 110, 112);
-    background: linear-gradient(to right,rgb(163, 247, 161),rgb(167, 242, 242));
     font-weight: bold;
-    box-shadow: 10px 10px 50px rgb(180, 178, 178);
+    background: linear-gradient(to right,rgb(161, 168, 247),rgb(242, 167, 231));
+    border-radius: 25px;
   }
   .btn:hover{
     transform: scale(1.1) rotate(-0.5deg);

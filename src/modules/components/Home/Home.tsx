@@ -5,14 +5,13 @@ import { useEffect } from "react";
 const Home = () => {
 
     useEffect(() => {
-        if (!accessToken) {
+        if (localStorage.getItem('loggedIn') !== 'true') {
             navigate('/login');
            
           }
     }, [])
     
 
-    const accessToken = localStorage.getItem("accessToken");
     const navigate = useNavigate();
 
     
