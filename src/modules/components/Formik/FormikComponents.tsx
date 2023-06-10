@@ -14,11 +14,11 @@ export const MyTextInput = ({ label, ...props }: any) => {
         {...props}
         style={{
           border: '1px solid #ccc',
-          borderRadius: '25px',
+          borderRadius: '10px',
           padding: '8px',
           width: '78%',
           textAlign: 'center',
-          boxShadow: '5px 5px 50px rgb(180, 178, 178)',
+          boxShadow: '10px 10px 50px rgb(180, 178, 178)',
           // Add more inline styles as needed
         }}
       />

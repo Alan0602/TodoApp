@@ -3,12 +3,15 @@ import './App.css'
 import NotFound from './modules/components/NotFound/NotFound';
 import Login from './modules/pages/Login/Login';
 import Signup from './modules/pages/Signup/Signup';
-import Todo from './modules/pages/Todo/Todo';
+import Home from './modules/components/Home/Home';
+import 'react-toastify/dist/ReactToastify.css';
+
+
 
 const router = createBrowserRouter([
     {
         path: "/",
-        element: <Todo />
+        element: <Home />
     },
     {
         path: "*",
@@ -19,14 +22,18 @@ const router = createBrowserRouter([
         element: <Signup />
     },
     {
-        path: "/Login",
+        path: "/login",
         element: <Login />
     },
     
 ]);
 
 function App() {
-    return <RouterProvider router={router} />;
+    return (
+      <>
+        <RouterProvider router={router} />;
+      </>
+    ); 
 }
 
 export default App;

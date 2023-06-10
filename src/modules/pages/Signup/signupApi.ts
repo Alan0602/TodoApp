@@ -1,13 +1,17 @@
 import { AxiosError } from "axios";
 import { privateGateway } from "../../../services/apiGateway";
 import { routes } from "../../../services/routes";
+import { NavigateFunction } from "react-router-dom";
+import { success } from "../../components/Common/Tostify";
+
 
 export const signup = async (
     userName: string,
     password: string,
-) => {
-    try {
-        const response = await privateGateway.post(
+    navigate: NavigateFunction,
+    ) => {
+        try {
+            const response = await privateGateway.post(
             routes.signup,
             {
                 username: userName,
@@ -16,6 +20,10 @@ export const signup = async (
         );
         const message: any = response?.data;
         console.log(message);
+        success()
+        setTimeout(() => {
+            navigate("/login");
+          }, 3000);
     } catch (err: unknown) {
         const error = err as AxiosError;
         if (error?.response) {

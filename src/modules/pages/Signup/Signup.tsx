@@ -4,6 +4,8 @@ import { MyTextInput } from "../../components/Formik/FormikComponents";
 import { signup } from "./signupApi";
 import * as Yup from "yup";
 import styles from "./signup.module.css"
+import { ToastContainer } from "react-toastify";
+import { loading, notify } from "../../components/Common/Tostify";
 
 type Props = {};
 
@@ -24,14 +26,14 @@ function Signup(props: Props) {
 
   const handleSubmit = (values: any) => {
     if(values.password1 === values.password){
-      signup(values.userName, values.password);
+      signup(values.userName, values.password, navigate);
       console.log(values);
-      setTimeout(() => {
-        navigate("/login");
-      }, 3000);
+      loading()
+     
     }
     else{
       console.log(values,'password is not matching');
+      notify()
     }
     
   };
@@ -73,11 +75,12 @@ function Signup(props: Props) {
             placeholder="Confirm password"
           />
           <br />
-          <button type="submit">SignIn</button>
+          <button className={styles.btn}type="submit">SignIn</button>
           <br />
         </Form>
       </Formik>
       </div>
+      <ToastContainer/>
     </div>
   );
 }
