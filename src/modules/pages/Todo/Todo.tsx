@@ -26,6 +26,7 @@ const Todo = () => {
   const navigate = useNavigate()
 
 
+
   function handleSubmit(values: {todo: string }) {
     todoCreate(values.todo)
     todoGet(setData)
@@ -66,10 +67,8 @@ const Todo = () => {
              name="todo"
              type="text"
              placeholder="Todolist Title"
+             className="input-button"
            />
-           <button className={styles.btn} type="submit">
-            +
-            </button>
             </div>
          </Form>
        </Formik>
@@ -78,26 +77,36 @@ const Todo = () => {
         <div className={styles.user1}>
         {data && data.map((todo) => (
         <div className={styles.user}>
-            <button
+            <p
                 className={styles.checkContainer}
                 onClick={() =>
                   handleUpdate(todo.id)
                 }
                 >
                 {todo.isCompleted ? < RiCheckboxCircleFill/>  : <RiCheckboxBlankCircleLine/> }
-              </button>
-              <span className={todo.isCompleted ? styles.completed : ""}>
+              </p>
+              <span className={todo.isCompleted ? styles.completed : "styles.notcompleted"}>
                 {todo.title}
               </span>
-              <button className={styles.delete}
+              <p className={styles.delete}
               onClick={() =>
                 handleDelete(todo.id)
               }
               >
                   <RiDeleteBin6Line/>
-              </button>
+              </p>
         </div>
       ))}
+      <footer className={styles.foot}>
+        <div>
+          <p>All</p>
+          <span>{todoCreate.length}</span>
+        </div>
+        <div>
+          <p>Completed</p>
+          {/* <span>{todo.title.isCompleted.length}</span> */}
+        </div>
+      </footer>
         </div>
     </div>
   )
