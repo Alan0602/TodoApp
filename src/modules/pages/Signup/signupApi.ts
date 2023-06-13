@@ -2,7 +2,7 @@ import { AxiosError } from "axios";
 import { privateGateway } from "../../../services/apiGateway";
 import { routes } from "../../../services/routes";
 import { NavigateFunction } from "react-router-dom";
-import { exist, notify, success } from "../../components/Common/Tostify";
+import { exist, success } from "../../components/Common/Tostify";
 
 
 export const signup = async (
