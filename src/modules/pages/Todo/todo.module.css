@@ -1,6 +1,5 @@
 .container{
     height: 559px;
-    width: 789px;
     border:  rgba(253, 250, 250, 0) 1px solid;
     background: linear-gradient(to right,rgba(241, 241, 241, 0.027),rgba(249, 247, 249, 0));
 }
@@ -24,7 +23,6 @@
 
 .logoutButton {
     margin-left: 300px;
-    width:max-content;
     height:40px;
     background: linear-gradient(to right,rgba(244, 248, 249, 0.514),rgba(246, 247, 248, 0.482));
     color:white;
@@ -35,7 +33,6 @@
     margin-top: 10px; 
   }
   .user1{
-    width:700px;
     padding: 1.05rem;
     background-color: rgba(249, 251, 251, 0);
   }
@@ -48,13 +45,10 @@
     background-color: rgba(249, 251, 251, 0.968);
     border: .5px solid rgb(202, 200, 200);
     border-radius: 25px;
-    width: 700px;
   }
   .checkContainer{
     background-color: rgba(249, 251, 251, 0.674);
     color:rgb(10, 199, 10);
-    width: max-content;
-    height: fit-content;
     padding: 0%;
     border-radius: 50%;
     border-color: rgb(242, 243, 244);
@@ -70,18 +64,12 @@
   }
   .delete{
     background-color: rgba(255, 255, 255, 0.023);
-    height:fit-content;
-    width: fit-content;
-    padding: .1rem .1rem .1rem .1rem;
   }
   .completed {
     text-decoration: line-through;
   }
   .imp{
-    width: 599px;
     border-radius: 25px;
     text-align: center;
   }
-  .gap{
-    padding: 1.5rem;
-  }
+  

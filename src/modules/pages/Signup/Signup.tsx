@@ -1,5 +1,5 @@
 import { Form, Formik } from "formik";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { MyTextInput } from "../../components/Formik/FormikComponents";
 import { signup } from "./signupApi";
 import * as Yup from "yup";
@@ -79,6 +79,7 @@ function Signup() {
           <br />
         </Form>
       </Formik>
+      <p>Already have account? <Link to={"/login"}>Log in</Link></p>
       </div>
       <ToastContainer/>
     </div>
