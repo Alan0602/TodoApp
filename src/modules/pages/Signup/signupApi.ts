@@ -2,7 +2,7 @@ import { AxiosError } from "axios";
 import { privateGateway } from "../../../services/apiGateway";
 import { routes } from "../../../services/routes";
 import { NavigateFunction } from "react-router-dom";
-import { notify, success } from "../../components/Common/Tostify";
+import { exist, notify, success } from "../../components/Common/Tostify";
 
 
 export const signup = async (
@@ -25,9 +25,11 @@ export const signup = async (
             navigate("/login");
           }, 3000);
     } catch (err: unknown) {
-        const error = err as AxiosError;
+        const error = err as AxiosError<any>; 
         if (error?.response) {
-            console.log(error.response);
+            console.log(error.response.data);
+            let msg:string = String(error.response.data.username[0])
+            exist(msg)
         }
     }
 }

@@ -21,6 +21,16 @@ export const success = () => toast.success(' Success', {
         progress: undefined,
         theme: "colored",
         });
+ export const exist = (time : string) => toast.error( time, {
+        position: "bottom-center",
+        autoClose: 4950,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "colored",
+        });
 
  export const loading= () => toast.warning(' Loading...', {
         position: "bottom-center",
